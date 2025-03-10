@@ -1,0 +1,90 @@
+/*THINGS TO ADD NEXT ROUND:
+	1. Customize font size for image tiles for mobile version
+	2. Add text w/ overlay on sub hero image (or box with text)
+	3. Add in grid elements
+*/
+
+body{
+	font-family:"Montserrat", serif;
+	margin:0;
+}
+
+.outer{
+	text-align: center;
+}
+
+.page{
+	max-width:1200px;
+	width:80%;
+	text-align:left;
+	display:inline-block;
+
+}
+
+a{
+	text-decoration:none;
+	color:#404040;
+}
+
+a:hover{
+	color:#faf7f1;
+}
+
+/* Hero image for subpages */
+
+.hero_sub{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.hero_sub img{
+	width: 100%;
+    height: 400px;
+    object-fit: cover
+}
+
+/* Contact Us button */
+
+.contact_button{
+	border-radius:40px;
+	background-color:#ecb753;
+	cursor:pointer;
+	color:#404040;
+	font-weight:bold;
+	padding:15px;
+	max-width:100px;
+	margin-bottom:40px;
+	text-align:center;
+
+}
+
+/* Set of image tiles*/
+
+.tile_set{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width:30%;
+	align-items:center;
+	justify-content:center;
+	float:left;
+	margin-bottom:40px;
+
+}
+
+.tile_set img{
+	width:100%;
+	height:100%;
+}
+
+.tile_set h2{
+	font-size:34px;
+	font-weight:bold;
+	color:#579e94;
+	display:block;
+
+}
+
+
