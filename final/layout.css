@@ -1,0 +1,252 @@
+body{
+	font-family:"Montserrat", serif;
+	margin:0;
+	padding:0;
+}
+
+.outer{
+	text-align: center;
+	background-color: #faf7f1;
+}
+
+.page{
+	position:relative;
+	max-width:1000px;
+	width:100%;
+	text-align:left;
+	display:inline-block;
+	background-color: #faf7f1;
+
+}
+
+/* nav */
+.topofpage {
+    position:absolute;
+    opacity:1;   
+    width: 100%;
+    height:110px;
+    background-color: transparent;
+  	display:flex;
+  	gap:40px;
+  	justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left:50px;
+
+}
+
+.navbar{
+  font-weight:bold;
+
+}
+
+.logo{
+  max-width: 150px;
+
+}
+
+.logo_img{
+  width:120px;
+  height:auto;
+}
+
+.navbar a {
+	text-decoration:none;
+	color:#404040;
+	margin-right:40px;
+}
+
+a{
+	text-decoration:none;
+	color:#404040;
+	text-align:center;
+	justify-content: center;
+}
+
+a:hover{
+	color:#ef836d;
+	cursor:pointer;
+}
+
+/* Hero image styles */
+
+.hero_main{    
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.hero_main img{
+	 width: 100%;
+   height: 800px;
+   object-fit: cover;
+}
+
+.hero_sub {
+	overflow:hidden;
+	text-align:center;
+}
+
+.hero_sub img{
+	 width: 100%;
+   height: 600px;
+   object-fit: cover;
+}
+
+
+/* Contact Us button */
+
+.contact_button {
+    border-radius: 40px;
+    background-color: #ecb753;
+    cursor: pointer;
+    color: #404040;
+    font-weight: bold;
+    padding: 15px 30px; /* Adjusted padding for better appearance */
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto; /* Ensures centering when necessary */
+}
+
+
+/* Set of image tiles*/
+
+.tile_set{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width:100%;
+	align-items:center;
+	justify-content:center;
+	float:left;
+	text-align:center;
+	overflow: hidden;
+
+}
+
+.tile_set img{
+	width:100%;
+	height:100%;
+	padding-bottom:20px;
+}
+
+.tile_set:hover{
+	animation-fill-mode:forwards;
+	animation-name:scale;
+	animation-duration: 0.5s;
+	animation-timing-function:ease-in-out;
+	cursor:pointer;
+}
+
+@keyframes scale{
+	from{transform: scale(1,1)}
+	to{transform: scale(1.1,1.1)}
+}
+
+/* Grid photos */
+
+.col_6_size {
+	overflow:hidden;
+	object-fit: cover;
+	max-width: 100%;
+	height: 30%;
+	padding-left:40px;
+	padding-top:40px;
+}
+
+
+/* Header and paragraph styles */ 
+
+h1{
+  font-family: "Rampart One", sans-serif;
+  font-weight: 400;
+  font-size:50px;
+  text-align:left;
+  color:#404040;
+  font-style: normal;
+  padding-top:40px;
+}
+
+h2{
+	font-size:28px;
+	font-weight:bold;
+	color:#404040;
+	display:block;
+	padding:40px;
+	line-height: 1.5;
+
+}
+
+.h2_sub{
+	text-align:left;
+	font-size:28px;
+	font-weight:bold;
+	color:#404040;
+	padding-bottom:20px;
+}
+
+p{
+	text-align:left;
+	font-size: 16px;
+	font-weight: 400;
+	padding-bottom:10px;
+}
+
+/* Javascript */
+
+#menu{
+    position:absolute;   
+    left:25px;
+    top:10px;
+    display:none;
+    cursor:pointer;
+}
+
+#menu img{
+    width:40px;
+    padding-top:20px;
+}
+
+#menuoverlay{  
+    display:none;
+    position:absolute;
+    top:0px;
+    background-color:#ecb753;
+    width:100%;
+    height:100vh;
+    text-align: center;
+    font-size:20px;
+    font-weight:700;
+    line-height:2;
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:20px;
+    cursor:pointer;
+    font-size:60px;
+    font-weight:300;
+}
+
+@media screen and (max-width:768px){
+
+    #menu{
+        display:inline-block;
+    }
+
+		#menuoverlay{
+        padding-top:40px;
+    }
+
+    #menuoverlay a{
+         display: block;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+  
+}
