@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+     .my_filter{
+
+      -webkit-filter: grayscale(1) opacity(.2); 
+      filter: grayscale(1) opacity(.2);
+      
+
+     }
+
+     .my_filter:hover{
+
+     animation: 2s myfilteranimation forwards;
+
+     }
+
+
+     @keyframes myfilteranimation{
+      
+	      100%{
+	       -webkit-filter: grayscale(0) opacity(1); 
+	        filter: grayscale(0) opacity(1);
+	       }
+
+
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" style="max-height: 600px;" src="img/soondubu.jpg" alt="soondubu">
+
+</body>
+</html>
